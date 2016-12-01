@@ -19,11 +19,11 @@ author:
 
 # Google-analytics
 google-analytics:
-  id:               "lmj3022@gmail.com"
+  id:               ""
 
 # Disqus
 disqus:
-  id:               "your-id"
+  id:               "lmj3022@gmail.com"
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
