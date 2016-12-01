@@ -18,5 +18,5 @@ share: true
 ***
 
 #### 참고 링크
-    * [github push를 할때 403에러가 발생하때!!](http://djdotdata.blogspot.kr/2013/05/github-push-403.html#!/2013/05/github-push-403.html)
-    * [Pushing to Git returning Error Code 403 fatal: HTTP request failed](http://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed)
+- [github push를 할때 403에러가 발생하때!!](http://djdotdata.blogspot.kr/2013/05/github-push-403.html#!/2013/05/github-push-403.html)
+- [Pushing to Git returning Error Code 403 fatal: HTTP request failed](http://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed)
