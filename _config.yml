@@ -46,8 +46,8 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           ""
-    url:            "/about"
+  - name:           "Home"
+    url:            "https://qnfzks55.github.io/"
   - name:           ""
     url:            "/archive"
   - name:           "Tags"
