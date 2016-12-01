@@ -12,9 +12,11 @@ share: true
 
 ##Git 명령어
 <code>$ git remote set-url origin https://username:userpassword@github.com/user/.git</code> 라고 입력 후,
+
 <code>$ git push origin master</code> 푸시 해주면 끝이다.
 
 ##참고자료
 
 [github push를 할때 403에러가 발생하때!!](http://djdotdata.blogspot.kr/2013/05/github-push-403.html#!/2013/05/github-push-403.html)
+
 [Pushing to Git returning Error Code 403 fatal: HTTP request failed](http://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed)
