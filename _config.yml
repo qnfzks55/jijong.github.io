@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "UI개발자 이명종"
+name:               "UI Devloper | 이명종"
 
 
 
@@ -46,13 +46,13 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
+  - name:           ""
     url:            "/about"
-  - name:           "Archive"
+  - name:           ""
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Github"
+  - name:           ""
     url:            "https://github.com/qnfzks55/qnfzks55.github.io"
 
 
