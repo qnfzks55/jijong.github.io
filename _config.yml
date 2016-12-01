@@ -46,7 +46,7 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "Home"
+  - name:           "home"
     url:            "https://qnfzks55.github.io/"
   - name:           ""
     url:            "/archive"
