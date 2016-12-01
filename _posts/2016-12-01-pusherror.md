@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-나는 IDE난 git bash로 버전관리를 하는데 가끔 push 할때마다 error:403 이 나곤한다. push 권한이 없을때 나타나는 error인데 열심히 구글링한 결과 이렇게 해결하면 된다.
+나는 IDE에 내장된 git 기능이나 git bash로 버전관리를 하는데 가끔 push 할때마다 error:403 이 나곤한다. push 권한이 없을때 나타나는 error인데 열심히 구글링한 결과 이렇게 해결하면 된다.
 
 #### Git 명령어
 
