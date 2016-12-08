@@ -10,11 +10,13 @@ share: true
 
 ## 웹팩으로 src, dist 파일 분류하기 (copy-webpack-plugin)
 
+
 HTML 파일을 빌드하는 html-webpack-plugin 말고 html파일 이외에 다른 파일들을 옮길 수 있는 모듈이 있다.
 
 `npm install -d copy-webpack-plugin`
 
 ## webpack.config.js
+
 
 ```js
 var CopyWebpackPlugin = require('copy-webpack-plugin');
