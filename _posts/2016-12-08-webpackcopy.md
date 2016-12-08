@@ -13,7 +13,9 @@ share: true
 
 HTML 파일을 빌드하는 html-webpack-plugin 말고 html파일 이외에 다른 파일들을 옮길 수 있는 모듈이 있다.
 
-`npm install -d copy-webpack-plugin`
+```js
+$ npm install -d copy-webpack-plugin
+```
 
 ## webpack.config.js
 
