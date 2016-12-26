@@ -40,6 +40,7 @@ share: true
 <br>
 
 ## 들여쓰기
+
 절대 space와 tab을 섞어서 사용하지 않는다.<br>
 프로젝트를 시작할 때 반드시 space와 tab 둘 중 하나를 선택해야 한다.<br>
 이는 프로젝트의 성격에 따라 선택이 가능한 부분이며, space를 사용할 경우 2문자 또는 4문자를 사용한다.<br>
@@ -49,13 +50,16 @@ FE개발팀은 space 4문자를 사용하고 있다.
 
 <br><br>
 ## 문장의 종료
+
 문장의 종료는 반드시 세미콜론(;)을 사용한다.<br>
 자바스크립트는 이를 문법적으로 강제하지 않지만, 종종 생각지 못한 오류를 만들고 디버깅을 어렵게 한다.<br>
+
 > 참고<br>
 [안티 패턴 - 문장의 끝은 세미콜론(;)을 사용하라](https://github.com/nhnent/fe.javascript/wiki/%EC%95%88%ED%8B%B0-%ED%8C%A8%ED%84%B4#%EB%AC%B8%EC%9E%A5%EC%9D%98-%EB%81%9D%EC%9D%80-%EC%84%B8%EB%AF%B8%EC%BD%9C%EB%A1%A0%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
 
 <br><br>
 ## 명명규칙
+
 * 공백을 허용하지 않는다.
 * 상수는 대문자와 '_'를 사용한다.
 * 생성자는 대문자 카멜표기법을 사용한다.
@@ -68,14 +72,17 @@ FE개발팀은 space 4문자를 사용하고 있다.
     * 커스텀 객체의 프로퍼티 이름에도 동일
 
 [상수]
+
 ```javascript
 SYMBOLIC_CONSTANTS;
 ```
 [생성자]
+
 ```javascript
 ConstructorName;
 ```
 [변수]
+
 ```javascript
 // 숫자, 문자, 불린
 dog;
@@ -88,6 +95,7 @@ dogs;
 rDesc;
 ```
 [함수]
+
 ```javascript
 // 함수
 functionName;
@@ -99,11 +107,13 @@ onClickEventHandler;
 isAvailable;
 ```
 [private]
+
 ```javascript
 _privateVariableName;
 _privateFunctionName;
 ```
 [커스텀 객체와 프로퍼티]
+
 ```javascript
 customObjectName;
 customObjectName.propertyName;
@@ -114,17 +124,21 @@ _privateCustomObjectName._privatePropertyName;
 
 <br><br>
 ## 전역변수
+
 네임스페이스를 사용하여 전역변수를 최소화하며 암묵적인 전역변수는 절대로 사용하지 않는다.<br>
+
 > 참고<br>
 [안티 패턴 - 전역변수 대신 네임스페이스를 사용하라](https://github.com/nhnent/fe.javascript/wiki/%EC%95%88%ED%8B%B0-%ED%8C%A8%ED%84%B4#%EC%A0%84%EC%97%AD%EB%B3%80%EC%88%98-%EB%8C%80%EC%8B%A0-%EB%84%A4%EC%9E%84%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)<br>
 [안티 패턴 - 변수 선언시 반드시 "var" 키워드를 사용하라](https://github.com/nhnent/fe.javascript/wiki/%EC%95%88%ED%8B%B0-%ED%8C%A8%ED%84%B4#%EB%B3%80%EC%88%98-%EC%84%A0%EC%96%B8%EC%8B%9C-%EB%B0%98%EB%93%9C%EC%8B%9C-var-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC)
 
 [전역변수]
+
 ```javascript
 // Bad
 myglobal = "hello";
 ```
 [암묵적 전역 - 1]
+
 ```javascript
 // Good
 function sum(x, y) {
@@ -139,6 +153,7 @@ function sum(x, y) {
 }
 ```
 [암묵적 전역 - 2]
+
 ```javascript
 // Good
 function foo() {
@@ -155,7 +170,9 @@ function foo() {
 
 <br><br>
 ## 선언과 할당
+
 ### 변수
+
 변수의 선언은 호이스팅 비용과 가독성을 고려하여 분산시키지 않고, 함수 스코프의 시작 지점에서 var를 한 번만 사용하여 선언한다.<br>
 변수는 var 선언과 동시에 할당(초기화)하는 것을 원칙으로 하지만, 아래와 같은 예외 상황을 허용한다.<br>
 * 선언과 할당을 동시에 함으로 인해 가독성이 크게 떨어지는 경우, 선언과 할당을 나눠서 할 수 있다.<br>
@@ -168,6 +185,7 @@ function foo() {
 이 경우 필요에 따라서는 변수를 외부에 선언하여 클로저를 사용하는 것을 허용한다.
 
 > 참고<br>
+
 [안티 패턴 - 변수와 함수는 사용하기 전에 선언하라](https://github.com/nhnent/fe.javascript/wiki/%EC%95%88%ED%8B%B0-%ED%8C%A8%ED%84%B4#%EB%B3%80%EC%88%98%EC%99%80-%ED%95%A8%EC%88%98%EB%8A%94-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%A0%84%EC%97%90-%EC%84%A0%EC%96%B8%ED%95%98%EB%9D%BC)
 
 [변수의 선언 및 할당]
