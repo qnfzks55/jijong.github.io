@@ -166,67 +166,67 @@ share: true
 
     A. 중괄호{}, 괄호(), 줄 바꾸기
 
-    ```javascript
+```javascript
 
-    // if나 else, for while, try를 쓸 때에는 항상 빈 칸을 띠우고, 괄호를 사용하고, 여러 줄로 나누어 쓰세요.
-    // 이렇게 하면 가독성이 더 좋아집니다.
+// if나 else, for while, try를 쓸 때에는 항상 빈 칸을 띠우고, 괄호를 사용하고, 여러 줄로 나누어 쓰세요.
+// 이렇게 하면 가독성이 더 좋아집니다.
 
-    // 2.A.1.1
-    // 빼곡해서 알아보기 어려운 구문의 예
+// 2.A.1.1
+// 빼곡해서 알아보기 어려운 구문의 예
 
-    if(condition) doSomething();
+if(condition) doSomething();
 
-    while(condition) iterating++;
+while(condition) iterating++;
 
-    for(var i=0;i<100;i++) someIterativeFn();
-
-
-    // 2.A.1.1
-    // 가독성이 높아지도록 빈 칸을 띠워주세요.
-
-    if ( condition ) {
-      // 코드
-    }
-
-    while ( condition ) {
-      // 코드
-    }
-
-    for ( var i = 0; i < 100; i++ ) {
-      // 코드
-    }
-
-    // 아래처럼 하면 더 좋습니다:
-
-    var i,
-      length = 100;
-
-    for ( i = 0; i < length; i++ ) {
-      // 코드
-    }
-
-    // 아니면 이렇게 할 수도 있죠...
-
-    var i = 0,
-      length = 100;
-
-    for ( ; i < length; i++ ) {
-      // 코드
-    }
-
-    var prop;
-
-    for ( prop in object ) {
-      // 코드
-    }
+for(var i=0;i<100;i++) someIterativeFn();
 
 
-    if ( true ) {
-      // 코드
-    } else {
-      // 코드
-    }
-    ```
+// 2.A.1.1
+// 가독성이 높아지도록 빈 칸을 띠워주세요.
+
+if ( condition ) {
+  // 코드
+}
+
+while ( condition ) {
+  // 코드
+}
+
+for ( var i = 0; i < 100; i++ ) {
+  // 코드
+}
+
+// 아래처럼 하면 더 좋습니다:
+
+var i,
+  length = 100;
+
+for ( i = 0; i < length; i++ ) {
+  // 코드
+}
+
+// 아니면 이렇게 할 수도 있죠...
+
+var i = 0,
+  length = 100;
+
+for ( ; i < length; i++ ) {
+  // 코드
+}
+
+var prop;
+
+for ( prop in object ) {
+  // 코드
+}
+
+
+if ( true ) {
+  // 코드
+} else {
+  // 코드
+}
+```
 
 
     B. 할당, 선언, 함수(일반, 표현식, 생성자)
