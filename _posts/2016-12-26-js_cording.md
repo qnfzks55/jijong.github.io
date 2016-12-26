@@ -8,9 +8,7 @@ comments: true
 share: true
 ---
 
-# 자연스럽고 일관성 있게 자바스크립트 코딩하는 원칙
-
-## 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요.
+### 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -36,11 +34,11 @@ share: true
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 
-## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
+### 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
-### 제가 원저자인 프로젝트의 코드를 작성할 때는 몇 가지 원칙을 따르는데요, 아래의 목록에 그 원칙들을 나열하였습니다. 이 프로젝트의 코드작성에 참여할 때에는 다음의 가이드라인을 따라야 합니다.
+#### 제가 원저자인 프로젝트의 코드를 작성할 때는 몇 가지 원칙을 따르는데요, 아래의 목록에 그 원칙들을 나열하였습니다. 이 프로젝트의 코드작성에 참여할 때에는 다음의 가이드라인을 따라야 합니다.
 
-### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
+#### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
 
 
 > ### "스타일에 관한 논쟁은 무의미하다. 스타일 가이드가 있을테니, 거기에 따르기만 해라"
@@ -52,7 +50,7 @@ share: true
 >_Idan_ _Gazit_
 
 
-## 번역
+### 번역
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
@@ -68,9 +66,9 @@ share: true
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
-## 관련은 없지만, 중요한 자료:
+### 관련은 없지만, 중요한 자료:
 
-### 코드 품질: 멋진 툴들, 리소스 & 참고자료
+#### 코드 품질: 멋진 툴들, 리소스 & 참고자료
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [Plato](https://github.com/jsoverson/plato)
@@ -83,10 +81,10 @@ share: true
  * [Editorconfig](http://editorconfig.org/)
 
 
-## 똑똑해지기
+### 똑똑해지기
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+#### [Annotated ECMAScript 5.1](http://es5.github.com/)
+#### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
 아래 리스트는 1) 이 주제의 모든 지식들을 포괄하지는 않습니다. 2) *반드시 읽기를 권합니다*. 저는 아래 저자들이 말하는 코딩 스타일에 대해 항상 찬성하는 것은 아니지만, 분명한 것은 그들이 일관성 있단 겁니다. 게다가 이들은 프로그래밍 언어의 권위자들입니다.
 
@@ -101,14 +99,14 @@ share: true
 
 
 
-### 빌드 & 배포 프로세스
+#### 빌드 & 배포 프로세스
 
 <!--Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.-->
 프로젝트는 배포를 위해 소스코드를 압축하는 방법을 마련해두어야 합니다. 이렇게 하기 위해, Ben Alman의 [grunt](https://github.com/cowboy/grunt) 는 둘째가라면 서러운 솔루션이며 공식적으로 이 레포지터리의 "kits/" 디랙토리를 대체 하고있습니다.
 
 
 
-### 테스트 Facility
+#### 테스트 Facility
 
 프로젝트에는 유닛, 참조, 구현, 기능에 관한 테스트가 _들어가 있어야_ 합니다. 유스 케이스를 "테스트"로 **한정하지 마세요.** 아래에는 테스트를 하는 프레임워크의 목록을 나열해 두었습니다. 이 중에 어느 하나를 더욱 추천하는 것은 아닙니다.
 
@@ -122,7 +120,7 @@ share: true
  * [Sinon.js](http://sinonjs.org/)
 
 
-## 목차
+### 목차
 
  * [공백](#whitespace)
  * [구문(Syntax)을 아름답게 작성하기](#spacing)
@@ -141,7 +139,7 @@ share: true
 
 
 <!---## Preface-->
-## 서문
+### 서문
 
 <!--The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.-->
 <!--下記のセクションではモダンなJavaScriptの開発のための_合理的な_スタイルガイドを説明していますが、規範的になれという意味ではありません。最も重要なことは一貫性のあるコードスタイル法則ということです。どんなものでもあなたのプロジェクトのために選ぶスタイルは一貫性のある法則であるべきです。一貫性、可読性、メンテナンス性のあるコードスタイルにするためにあなたのプロジェクトのコミットメントとしてこのドキュメントへリンクしてください。-->
@@ -150,7 +148,7 @@ share: true
 
 
 
-## 자연스러운 스타일에 관한 선언문
+### 자연스러운 스타일에 관한 선언문
 
 
 1. <a name="whitespace">공백</a>
@@ -1240,9 +1238,9 @@ share: true
 
     프로그램은 유지보수 하는 사람들에 의해 가급적 하나의 언어(영어이든 아니든 무슨 언어로든 간에 - 역자 주)로 쓰이는 것이 좋습니다.
 
-## 부록
+### 부록
 
-### 쉼표를 맨 앞에 쓰는 것에 대하여.
+#### 쉼표를 맨 앞에 쓰는 것에 대하여.
 
 이 문서를 기본 스타일 가이드로 인용하는 모든 프로젝트는 달리 명시하지 않는 한, 쉼표를 맨 앞에 쓰는 코드 포맷은 허락되지 않습니다.
 
